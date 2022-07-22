@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/723a080d60.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="../app.js"></script>
+    <title>SliDxX</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id = "home-icon"><img src="../images/SliDxX.png"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page"><b>Home</b></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#generate" class="navbar__links" id="generate-page"><b>Create</b></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="example.html" class="navbar__links" id="examples-page"><b>Examples</b></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page"><b>About</b></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#how" class="navbar__links" id="how-page"><b>How?</b></a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup"><b>Sign up</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Create your <span>show</span></h1>
+            <p class="hero__description">Impress your friends</p>
+            <button class="main__btn"><a href="#examples">Explore example shows...</a></button>
+        </div>
+    </div>
+
+    <div class="generate" id="generate">
+        <h1>Create your own show!</h1>
+    </div>
+    <div class="generate__wrapper">
+        <div class="generate__card" onclick="">
+            
+            <h2>Drag and Drop</h2>
+            <p>your files here!</p>
+            <p></p>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <div class="generate__card">
+            <h2>How to create a show?</h2>
+            <p>Drag and drop your photos and/or videos or upload it through the explorer. 
+                Then edit the settings in a way that you like and preview the results. 
+                If you like it click dreate and enjoy the show.</p>
+            <p></p>
+            <div class="generate__btn"><button>Create...</button></div>
+        </div>
+        <div class="generate__card">
+            <h2>Options</h2>
+            <ul>
+                <li class="options-item"><p></p></li>
+                <li class="options-item">
+                    <label>Border radius: </label>
+                    <b id="borderRadiusValue">5</b>
+                    <input type="range" class = "options-slider" id="borderRadiusSlider" min = "0" max = "10" value="5" onmousemove=displayBorderSliderValue();>
+                </li>
+                <li class="options-item">
+                    <label>Move speed: </label>
+                    <b id="moveSpeedValue">5</b>
+                    <input type="range" class = "options-slider" id="tilesSpeedSlider" min = "0" max = "10" value="5" onmousemove=displayTileSpeedSliderValue();>
+                </li>
+                <li class="options-item"><p></p></li>
+                <li class="options-item">
+                    <label>Min. width: </label>
+                    <b id="minWidthValue">5</b>
+                    <input type="range" class = "options-slider" id="minWidthSlider" min = "0" max = "10" value="5" onmousemove=displayMinWidthSliderValue();>
+                </li>
+                <li class="options-item">
+                    <label>Max. width: </label>
+                    <b id="maxWidthValue">5</b>
+                    <input type="range" class = "options-slider" id="maxWidthSlider" min = "0" max = "10" value="5" onmousemove=displayMaxWidthSliderValue();>
+                </li>
+                <li class="options-item">
+                    <label>Min. height: </label>
+                    <b id="minHeightValue">5</b>
+                    <input type="range" class = "options-slider" id="minHeightSlider" min = "0" max = "10" value="5" onmousemove=displayMinHeightSliderValue();>
+                </li>
+                <li class="options-item">
+                    <label>Max. height: </label>
+                    <b id="maxHeightValue">5</b>
+                    <input type="range" class = "options-slider" id="maxHeightSlider" min = "0" max = "10" value="5" onmousemove=displayMaxHeightSliderValue();>
+                </li>
+                <li class="options-item"><p></p></li>
+                <li class="options-item">
+                    <label>Background color: </label>
+                    <input type="color" class = "options-color" id="bg-color" value="#FFFFFF">
+                </li>
+                <li class="options-item">
+                    <label>Glass tiles color: </label>
+                    <input type="color" class = "options-color" id="glass-color"value="#FFFFFF">
+                </li>
+                <li class="options-item"><p></p></li>
+                <li class="options-item">
+                    <label>Opacity: </label>
+                    <b id="opacityValue">5</b>
+                    <input type="range" class = "options-slider" id="opacitySlider" min = "0" max = "10" value="5" onmousemove=displayOpacitySliderValue();>
+                </li>
+                <li class="options-item">
+                    <label>Blur effect: </label>
+                    <b id="blurValue">5</b>
+                    <input type="range" class = "options-slider" id="blurSlider" min = "0" max = "10" value="5" onmousemove=displayBlurSliderValue();>
+                </li>
+                <li class="options-item"><p></p></li>
+                <li class="options-item">
+                    <label>Set as public: </label>
+                    <input type="checkbox" class = "options-checkbox" id="publicCheckbox" onchange=setPublicityValue();>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="examples" id="examples">
+        <h1>Example Shows</h1>
+    </div>
+    <div class="examples__wrapper">
+        <div class="examples__card" onclick="window.location.href = '/photos.html';">
+            <h2>Photos</h2>
+            <p>Create a modern art gallery!</p>
+            <p></p>
+            <div class="examples__btn"><button>View</button></div>
+        </div>
+        <div class="examples__card" onclick="window.location.href = '/videos.html';">
+            <h2>Videos</h2>
+            <p>Show off your videos in a professional way!</p>
+            <p></p>
+            <div class="examples__btn"><button>View</button></div>
+        </div>
+        <div class="examples__card" onclick="window.location.href = '/mixed.html';">
+            <h2>Mixed</h2>
+            <p>Present your holiday photos & videos in a cool way!</p>
+            <p></p>
+            <div class="examples__btn"><button>View</button></div>
+        </div>
+    </div>
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>We create slideshows</h2>
+                <p>With the help of our simple tool you can easily create professional looking shows</p>
+                <button class="main__btn"><a href="#">Create a show</a></button>
+            </div>
+            <div class="main__img-container">
+                <div class="main__img--card"><i class="fa-solid fa-layer-group"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="how">
+        <div class="main__container">
+            <div class="main__img-container">
+                <div class="main__img--card"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            </div>
+            <div class="main__content">
+                <h1>How does it work?</h1>
+                <h2>With magic...</h2>
+                <p>Just kiddin'.</p>
+                <p>Every slideshow will get dynamically generated based on the personal choice of the user.</p>
+                <button class="main__btn"><a href="#">Create a show</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="sign-up">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Join our Community</h1>
+                <h2>Sign Up today</h2>
+                <p>Unlock premium features</p>
+                <button class="main__btn"><a href="#">Sign Up</a></button>
+            </div>
+            <div class="main__img-container">
+                <div class="main__img--card"><i class='fas fa-users'></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="#media">Photos&Videos</a>
+                    <a href="#forum">Forum</a>
+                    <a href="#ideas">Ideas</a>
+                    <a href="#terms-of-service">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact</h2>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#donate">Support Us</a>
+                    <a href="#coop">Cooperate</a>
+                    <a href="#tips">Tips</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="#home" id="footer__logo">SliDxX</a>
+                </div>
+                <p class="website__rights">© SliDxX 2022. All Rights Reserved</p>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

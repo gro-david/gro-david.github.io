@@ -1,6 +1,6 @@
 title: Dávid
 description: My Portfolio
-theme: jekyll-them-cayman
+theme: jekyll-theme-cayman
 
 # first header
 - some random list element

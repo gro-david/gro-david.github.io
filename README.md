@@ -1,5 +1,5 @@
 title: Dávid
-descripttion: My Portfolio
+description: My Portfolio
 theme: jekyll-them-cayman
 
 # first header

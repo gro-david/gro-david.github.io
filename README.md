@@ -2,6 +2,7 @@
 title: Dávid
 description: My Portfolio
 theme: jekyll-theme-cayman
+markdown: kramdown
 ---
 
 # first header

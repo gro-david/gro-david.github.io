@@ -16,5 +16,5 @@ As the highlight of the whole club worked together to plan and develop a brand n
 ![Gameplay](/media/gameplay.png)
 
 ## Interested?
-Check out the game on my [itch.io](gro-david.itch.io) page!
+Check out the game on my [itch.io](https://gro-david.itch.io) page!
 

@@ -38,6 +38,7 @@ comments: false
 
 ## Participation in Extracurricular Academic Activities
 
+* KIT SCC Förderstipendium 2024: Topic: Microfluiddynamics
 * KIT CAMMP week 2023, June: Topic: Determination of the rotation contour in a turning-milling process
 * Internship at SAP, November 2022
 * Internship at Inovex, July 2022: Topic: Web Design

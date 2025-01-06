@@ -13,4 +13,4 @@ This year - after lots of unfinished, large and bulky projects - I decided that 
 For this week I started with an idea by ChatGPT which was to create a game in which gravity was not constant but could instead be flipped. For this I was inspired by a game named Mind over Magnet, and decided to go for a magnet dude and a permanent magnetic field, the polarity of which could be switched around by pressing the Shift key. Otherwise the game is a standard plattformer. My greatest difficulty was creating all the artwork and animations, which took a lot more time than planned. This meant that the today I worked for a lot longer than just 45 minutes. But in the end I am quite happy with how the game turned out. Even though I only had time to create one level (beside the tutorial), the game is quite polished, and with a few more levels absolutely publishable. 
 
 ## Interested?
-The game will be published as soon as I find the time to create a few more levels, on my [itch.io](gro-david.itch.io) page.
+The game will be published as soon as I find the time to create a few more levels, on my [itch.io](https://gro-david.itch.io) page.
